@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer | Student Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div
+                style="display: inline-block; background: rgba(99, 102, 241, 0.1); padding: 1rem; border-radius: 20px; margin-bottom: 1.5rem;">
+                <i data-lucide="brain-circuit" style="width: 40px; height: 40px; color: var(--primary);"></i>
+            </div>
+            <h1>Resume AI</h1>
+            <p>Advanced parsing for student resumes</p>
+        </header>
+
+        <main>
+            <section class="card upload-section">
+                <form id="uploadForm">
+                    <div class="file-drop-area" id="dropArea">
+                        <i data-lucide="upload-cloud"
+                            style="width: 48px; height: 48px; color: var(--primary); margin: 0 auto 1.5rem; display: block;"></i>
+                        <p>Drag & drop your resume or click to browse</p>
+                        <label for="resumeInput" class="custom-file-upload">Choose File</label>
+                        <input type="file" id="resumeInput" name="file" accept=".pdf,.docx" required>
+                        <div id="fileName" class="file-name"></div>
+                    </div>
+                    <button type="submit" id="analyzeBtn">Analyze Resume Now</button>
+                </form>
+            </section>
+
+            <section id="loading" class="card hidden">
+                <div class="spinner"></div>
+                <p>AI is reading your resume... <span id="progressText">0%</span></p>
+            </section>
+
+
+        </main>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

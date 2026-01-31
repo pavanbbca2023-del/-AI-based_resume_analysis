@@ -1,0 +1,9 @@
+django>=5.0.0
+djangorestframework
+django-cors-headers
+gunicorn
+groq
+python-docx
+pdfplumber
+python-dotenv
+whitenoise

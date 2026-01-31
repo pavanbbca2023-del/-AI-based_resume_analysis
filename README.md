@@ -30,7 +30,7 @@ This project is a web-based application designed to help students and recruiters
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/pavanbbca2023-del/-AI-based_resume_analysis.git
 cd AI-based_resume_analysis
 ```
 
